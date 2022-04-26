@@ -17,33 +17,31 @@
     method="post"
     >
 
-      <fieldset>
+      <fieldset class="container">
         <legend>Personal information</legend>
         <label class="form-field">
-          <label>Surename:</label>
+          Surname:
           <input type="text" name="surename" autocomplete="off">
         </label>
         <label class="form-field">
-          <label>Name:</label>
+          Name:
           <input type="text" name="name" autocomplete="off">
         </label>
         <label class="form-field">
-          <label> How old are You:</label>
+          How old are You:
           <input 
         type="number" 
         min="1" 
         max="100" 
         value="12" 
-        name="how-old-are-you" > 
+        name="how-old-are-you"> 
         </label>
         <label class="form-field">
-          <label>Full date of birth:</label>
-        
+         Full date of birth:
           <input type="date">
-
         </label>
         <label class="form-field">
-          <label>I accept the term of the agrement</label>
+         I accept the term of the agrement
           <input name="accept" type="checkbox">
         </label>
       </fieldset>
@@ -69,21 +67,15 @@
 
       <fieldset>
         <legend>An interesing fact about you</legend>
-        <label class="cat">
+        <div class="for-ask-cat">
+          <label class="cat">
         Do you love cats?
-          <input 
-        type="radio" 
-        name="cats" 
-        id="yes-cats" 
-        value="yes">
-        Yes
-          <input 
-        type="radio" 
-        name="cats" 
-        id="no-cats" 
-        value="no">
-        No  
-        </label>
+            <input type="radio" name="cats">
+          Yes
+            <input type="radio" name="cats">
+           No  
+          </label>
+        </div>
         <label class="color">
         What is your faworite color?
           <input type="color">
@@ -102,23 +94,29 @@
         </label>
         <label class="rate-work">
         How do you rate ouer work?
-          <input type="range" name="rate" >
+          <input 
+          type="range" 
+          name="rate"
+          min="1"
+          max="10"
+          value="5" >
         </label>
       </fieldset>
 
       <fieldset>
         <legend>Additional info</legend>
+        <label>
       Comments:
-        <textarea name="feedback"></textarea>
+          <textarea name="feedback"></textarea>
+        </label>
+        <label>
       Would you recommendet us?
-        <input 
-        type="checkbox" 
-        id="Yes" 
-        name="Yes"
-        checked>
-        <label for="Yes">Yes</label>
-        <input type="checkbox" id="No" name="No">
-        <label for="No">No</label>        
+          <select>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </label>
+        
       </fieldset>
       
       <button type="submit">Submit</button>
