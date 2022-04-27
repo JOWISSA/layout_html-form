@@ -1,21 +1,12 @@
 .container {
   margin-bottom: 20px;
-  padding: 0 12px;
 }
 
 .form-field {
   display: block;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
-legend + .form-field {
-  margin-top: 6px;
-}
-
-[type="date"] {
-  padding-top: 0.5px;
-}
-
-.reg + .form-field {
-  margin-top: 5px;
+.form-field:last-child {
+  margin-bottom: 0;
 }
